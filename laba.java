@@ -36,7 +36,7 @@ public class laba {
         long time = 0;
         long startTime = 0;
         Scanner in = new Scanner(System.in);
-        System.out.print("Выберите  размер массива : 10,100,1000,10000 ");
+        System.out.print("Make your change : 10,100,1000,10000 ");
         z=in.nextInt();
         switch(z){
         case 10: n=10; break;
@@ -44,7 +44,7 @@ public class laba {
         case 1000: n=1000; break;
         case 10000: n=10000; break;
         default: 
-        	System.out.println("Ошибка во время ввода. Значение некоректно!");
+        	System.out.println("Error! You can't work with this number");
 		System.exit(0);
         }
         arr = new int [n];
@@ -60,7 +60,7 @@ public class laba {
        time = System.nanoTime()-startTime ;
         for (int value : arr1) {System.out .print(value); }
         System.out.println("");
-        System.out.println("время выполнения быстрой сортировки: " + (time )+"(н.сек)");
+        System.out.println("time on quick: " + (time )+"(n.sec.)");
         System.out.println("");
      time=0;
      startTime=0;
@@ -69,7 +69,7 @@ public class laba {
         time = System.nanoTime() - startTime;
         	for (int value : arr) {System.out .print(value); }
         System.out.println("");
-        System.out.println("время выполнения  пузырьковой сортироки: " + (time )+"(н.сек.)");
+        System.out.println("time on bubble: " + (time )+"(n.sec.)");
         System.out.println("");        
     }
 }
